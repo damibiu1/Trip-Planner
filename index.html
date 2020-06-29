@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/705438527d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css"
+      media="all"
+      rel="stylesheet"
+      id="font-awesome-5-kit-css"
+    />
+    <link
+      href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css"
+      media="all"
+      rel="stylesheet"
+      id="font-awesome-5-kit-css"
+    />
+    <link
+      href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css"
+      media="all"
+      rel="stylesheet"
+      id="font-awesome-5-kit-css"
+    />
+    <title>Find Your Way</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer="" src="app.js"></script>
+  </head>
+  <body>
+    <div class="origin-container">
+      <form class="origin-form" onsubmit="javascript:getOrigin();return false;">
+        <input placeholder="Find a starting location" type="text" id="origin" />
+      </form>
+
+      <ul class="origins" id="origins">
+        <!-- <li data-long="-97.19167" data-lat="49.815176" class="selected">
+          <div class="name">Manitoba Institute of Trades and Technology</div>
+          <div>130 Henlow Bay</div>
+        </li>
+        <li data-long="-97.1715329" data-lat="49.9256937">
+          <div class="name">Manitoba Avenue</div>
+          <div>Winnipeg</div>
+        </li> -->
+      </ul>
+    </div>
+
+    <div class="destination-container">
+      <form class="destination-form" onsubmit="javascript:getDestination();return false;">
+        <input placeholder="Choose your Destination" type="text" id="destination" />
+      </form>
+
+      <ul class="destinations" id="destinations">
+      </ul>
+    </div>
+
+    <div class="button-container">
+      <button class="plan-trip" onclick="planTrip()">Plan My Trip</button>
+    </div>
+
+    <div class="bus-container">
+      <ul class="my-trip" id="my-trip">
+      </ul>
+    </div>
+  </body>
+</html>
